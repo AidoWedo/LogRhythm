@@ -1,0 +1,82 @@
+<?xml version="1.0" standalone="yes"?>
+<RuleDataset>
+  <ExportInfo>
+    <ExportConsoleVersion>7.2.4.0</ExportConsoleVersion>
+    <KBVersion>7.1.404.0</KBVersion>
+    <DateExported>2017-08-29T15:11:48.3096808+01:00</DateExported>
+    <ExportLicense>535460</ExportLicense>
+    <ExportUser>logrhythmadmin</ExportUser>
+  </ExportInfo>
+  <MPERule>
+    <MPERuleID>1000000001</MPERuleID>
+    <MPERuleRegexID>1000000001</MPERuleRegexID>
+    <RuleStatus>3</RuleStatus>
+    <StatusName>Development</StatusName>
+    <CommonEventID>6906</CommonEventID>
+    <CommonEventName>General TCP/IP Error</CommonEventName>
+    <MsgClassID>3200</MsgClassID>
+    <Name>Cisco Asa Error Logs</Name>
+    <FullName>Cisco Asa Error Logs</FullName>
+    <BaseRule>1</BaseRule>
+    <DefMsgTTL>32</DefMsgTTL>
+    <DefMsgArchiveMode>2</DefMsgArchiveMode>
+    <DefMsgArchiveModeBool>true</DefMsgArchiveModeBool>
+    <DefForwarding>1</DefForwarding>
+    <DefForwardingBool>true</DefForwardingBool>
+    <DefRiskRating>7</DefRiskRating>
+    <DefFalseAlarmRating>0</DefFalseAlarmRating>
+    <InheritTech>1</InheritTech>
+    <RecordStatus>1</RecordStatus>
+    <DateUpdated>2017-08-29T14:09:50.563+01:00</DateUpdated>
+    <SortOrder>1</SortOrder>
+    <VersionMajor>4</VersionMajor>
+    <VersionMinor>1</VersionMinor>
+    <SHostIs>1</SHostIs>
+    <DHostIs>1</DHostIs>
+    <ServiceIs>0</ServiceIs>
+    <HostContext>0</HostContext>
+    <PrefixBaseRuleName>0</PrefixBaseRuleName>
+    <IsSystemRule>No</IsSystemRule>
+    <NewRuleRecordType>0</NewRuleRecordType>
+    <DefLogMartMode>13627389</DefLogMartMode>
+  </MPERule>
+  <MPERuleRegex>
+    <MPERuleRegexID>1000000001</MPERuleRegexID>
+    <RegexTagged>^.*?InfrastructureServices\s:\s%ASA-6-(?&lt;VMID&gt;\w+):\s(?&lt;object&gt;.*?).*?(:|faddr\s)(&lt;sip&gt;|(?&lt;sname&gt;.*?))/&lt;sport&gt;.*?(:|gaddr\s)(&lt;dip&gt;|(?&lt;dname&gt;.*?))/&lt;dport&gt;</RegexTagged>
+    <IgnoreCase>1</IgnoreCase>
+    <Multiline>0</Multiline>
+    <RecordStatus>1</RecordStatus>
+    <DateUpdated>2017-08-29T14:09:50.563+01:00</DateUpdated>
+    <PerfMonMode>1</PerfMonMode>
+    <VersionMajor>4</VersionMajor>
+    <VersionMinor>1</VersionMinor>
+  </MPERuleRegex>
+  <MPERuleToMST>
+    <MsgSourceTypeID>162</MsgSourceTypeID>
+    <MPERuleRegexID>1000000001</MPERuleRegexID>
+    <SortOrder>118</SortOrder>
+    <AutoSort>0</AutoSort>
+  </MPERuleToMST>
+  <CommonEvent>
+    <CommonEventID>6906</CommonEventID>
+    <MsgClassID>3200</MsgClassID>
+    <Name>General TCP/IP Error</Name>
+    <ShortDesc>General TCP/IP Protocol Driver Error</ShortDesc>
+    <DefRiskRating>7</DefRiskRating>
+    <DateUpdated>2007-06-28T21:55:13.3+01:00</DateUpdated>
+    <RecordStatus>1</RecordStatus>
+  </CommonEvent>
+  <MsgSourceType>
+    <MsgSourceTypeID>162</MsgSourceTypeID>
+    <Name>Syslog - Cisco ASA</Name>
+    <FullName>Syslog - Cisco ASA</FullName>
+    <Abbreviation>Cisco ASA</Abbreviation>
+    <ShortDesc />
+    <LongDesc />
+    <ParentMsgSourceTypeID>1</ParentMsgSourceTypeID>
+    <IsMst>1</IsMst>
+    <DateUpdated>2008-02-15T16:55:57.147+00:00</DateUpdated>
+    <MsgSourceFormat>1</MsgSourceFormat>
+    <RecordStatus>1</RecordStatus>
+  </MsgSourceType>
+</RuleDataset>
